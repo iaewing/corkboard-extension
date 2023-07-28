@@ -1,0 +1,22 @@
+{
+  "name": "corkboard-extension",
+  "version": "1.0.0",
+  "description": "This is a basic browser extension meant to be used in conjuction with Corkboard",
+  "main": "popup/corkboardPopup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iaewing/corkboard-extension.git"
+  },
+  "author": "Ian Ewing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iaewing/corkboard-extension/issues"
+  },
+  "homepage": "https://github.com/iaewing/corkboard-extension#readme",
+  "devDependencies": {
+    "webextension-polyfill": "^0.10.0"
+  }
+}
