@@ -9,7 +9,10 @@ function listenForClicks() {
     document.addEventListener("click", (e) => {
         function saveLink(tabs) {
             browser.tabs.query({ active: true, currentWindow: true }).then(function (tabs) {
-                var currentURL = tabs[0].url;
+                const currentURL = tabs[0].url;
+                const title = document.getElementById("title").value;
+                const tags = document.getElementById("tags").value;
+
                 console.log(currentURL);
                 // browser.tabs.sendMessage(tabs[0].id, {
                 //     command: "saveLink",
@@ -19,7 +22,8 @@ function listenForClicks() {
                     method: "POST",
                     body: JSON.stringify({
                         user_id: 1,
-                        title: "Fix my bugs",
+                        title: title,
+                        tags: tags,
                         url: currentURL
                     }),
                     headers: {

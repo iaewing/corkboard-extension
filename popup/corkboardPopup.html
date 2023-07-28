@@ -7,9 +7,14 @@
 
   <body>
     <div id="popup-content">
-      <button>Save</button>
-      <button type="reset">Reset</button>
-      <div>Hey hi hello</div>
+      <form>
+        <label for="title">Title</label>
+        <input type="text" id="title" required />
+        <label for="title">Tags (separated by commas)</label>
+        <input type="text" id="tags" />
+        <button>Save</button>
+        <button type="reset">Reset</button>
+      </form>
     </div>
     <div id="error-content" class="hidden">
       <p>Can't save this web page.</p>
