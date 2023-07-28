@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Corkboard",
+    "version": "0.1",
+    "description": "Adds a browser action icon to the toolbar. Click the button to save a url on your Corkboard",
+    "homepage_url": "https://corkboard.com",
+    "icons": {
+        "32": "icons/pin.png",
+        "48": "icons/pin.png"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ],
+    "browser_action": {
+        "default_icon": "icons/pin-32.png",
+        "default_title": "Corkboard",
+        "default_popup": "popup/corkboardPopup.html"
+    }
+}
