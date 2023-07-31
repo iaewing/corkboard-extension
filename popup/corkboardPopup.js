@@ -1,5 +1,5 @@
 
-const API_URL = "http://localhost/api/1/bookmarks";
+const API_URL = "http://localhost/api/bookmarks";
 
 /**
 * Listen for clicks on the buttons, and send the appropriate message to
